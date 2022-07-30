@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Twitter Cards</title>
     <link rel="stylesheet" href="/styles.css">
     <!--Fuentes de GOogle Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,32 @@
 </head>
 <body>
 
+    <div class="inputs">
+        <div class="container-inputs">
+            <div>
+                <p>Nombre</p>
+                <input id="inputName" type="text" placeholder="Coloca el nombre del usuario" value="Siendo Miguel 🇻🇪">
+            </div>
+            <div>
+                <p>Username</p>
+                <input id="inputUsername" type="text" placeholder="Coloca el username del usuario" value="siendomiguel">
+            </div>
+            <div>
+                <p>Fecha</p>
+                <input id="inputDate" type="text" placeholder="Coloca la fecha" value="25 jul">
+            </div>
+            <div>
+                <p>Contenido</p>
+                <textarea id="inputContain" type="text" placeholder="Coloca el contenido del tweet"></textarea>
+            </div>
+            <div>
+                <p>Hashtags</p>
+                <input id="inputHashtags" type="text" placeholder="Coloca los hashtags del tweet">
+            </div>
+        </div>
+        <button id="btn">Modificar</button>
+    </div>
+
     <div class="main-twitter">
         <div class="card-tweet">
             <div class="avatar">
@@ -22,26 +48,26 @@
             </div>
             <div class="contain">
                 <div class="header-contain">
-                    <p>Siendo Miguel 🇻🇪</p>
-                    <p>@siendomiguel</p>
-                    <p>· 10 jul.</p>
+                    <p id="name">Siendo Miguel 🇻🇪</p>
+                    <p id="username">@siendomiguel</p>
+                    <p id="date">· 25 jul.</p>
                     <img src="https://cdn-icons-png.flaticon.com/512/6704/6704979.png" alt="">
                 </div>
                 <div class="text-contain">
-                    <p>Esto no ayuda, no se a quien se le ocurrio beneficiar al jugador del turno 2, ESTO NO AYUDA. Hace más random la partida.<br><br>
+                    <p id="text-contain">Axie Origin ha demostrado nuevamente que aún se encuentra en fase alpha.<br><br>
 
-                        De 10 partidas, 8 en turno 1, 80% de veces comenzando con desventaja. <br><br>
-                        
-                        Si bien en cierto ganar no es imposible, se hace muy cuesta arriba! <br><br>
-                        
+                        Al comienzo de la season, escalabas en el leaderboard por los axies que tenías en el equipo, ya a 3 días de finalizar la season, ahora lo único que hace la diferencia son las runas y charms que consigas.<br><br>
+                                            
                     </p>
-                    <p class="hashtags">#AxieOrigin #Axie</p>
+                    <p id="hashtags" class="hashtags">#AxieOrigin #Axie</p>
                 </div>
             </div>
         </div>
 
 
     </div>
+
+    <script src="./index.js"></script>
     
 </body>
 </html>

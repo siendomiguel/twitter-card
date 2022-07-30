@@ -90,3 +90,24 @@ p {
 .hashtags {
     color: var(--linksColor);
 }
+
+/* ------------- Inputs ------------- */
+
+.inputs {
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+}
+
+.container-inputs {
+    display: flex;
+    flex-direction: row;
+}
+
+#btn {
+    margin: 20px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: var(--linksColor)
+}
