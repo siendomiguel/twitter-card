@@ -4,43 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter Cards</title>
+    <title>Twitter Card</title>
     <link rel="stylesheet" href="./styles.css">
     <!--Fuentes de GOogle Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://cdn.icon-icons.com/icons2/792/PNG/512/TWITTER_icon-icons.com_65536.png">
 
 
 </head>
 <body>
-
-    <div class="inputs">
-        <div class="container-inputs">
-            <div>
-                <p>Nombre</p>
-                <input id="inputName" type="text" placeholder="Coloca el nombre del usuario" value="Siendo Miguel 🇻🇪">
-            </div>
-            <div>
-                <p>Username</p>
-                <input id="inputUsername" type="text" placeholder="Coloca el username del usuario" value="siendomiguel">
-            </div>
-            <div>
-                <p>Fecha</p>
-                <input id="inputDate" type="text" placeholder="Coloca la fecha" value="25 jul">
-            </div>
-            <div>
-                <p>Contenido</p>
-                <textarea id="inputContain" type="text" placeholder="Coloca el contenido del tweet"></textarea>
-            </div>
-            <div>
-                <p>Hashtags</p>
-                <input id="inputHashtags" type="text" placeholder="Coloca los hashtags del tweet">
-            </div>
-        </div>
-        <button id="btn">Modificar</button>
-    </div>
-
     <div class="main-twitter">
         <div class="card-tweet">
             <div class="avatar">
@@ -63,8 +37,33 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
+    <div class="inputs">
+        <div class="container-inputs">
+            <div>
+                <p>Nombre</p>
+                <input id="inputName" type="text" placeholder="Coloca el nombre del usuario" value="Siendo Miguel 🇻🇪">
+            </div>
+            <div>
+                <p>Username</p>
+                <input id="inputUsername" type="text" placeholder="Coloca el username del usuario" value="siendomiguel">
+            </div>
+            <div>
+                <p>Fecha</p>
+                <input id="inputDate" type="text" placeholder="Coloca la fecha" value="25 jul">
+            </div>
+            <div>
+                <p>Contenido</p>
+                <textarea id="inputContain" type="text" placeholder="Coloca el contenido del tweet"></textarea>
+            </div>
+            <div>
+                <p>Hashtags</p>
+                <textarea id="inputHashtags" type="text" placeholder="Coloca los hashtags del tweet con su simbolo de #"></textarea>
+            </div>
+        </div>
+        <button id="btn">Modificar</button>
     </div>
 
     <script src="./index.js"></script>

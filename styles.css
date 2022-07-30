@@ -43,6 +43,7 @@ p {
     place-items: center;
 }
 
+
 .card-tweet {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -51,6 +52,7 @@ p {
     padding: 50px;
     border-radius: 20px;
 }
+
 
 .avatar img {
     width: 70px;
@@ -61,6 +63,10 @@ p {
 .contain {
     display: grid;
     grid-template-rows: auto 1fr;
+}
+
+@media (max-width: 640px ) {
+    .contain
 }
 
 .header-contain {
@@ -92,16 +98,28 @@ p {
 }
 
 /* ------------- Inputs ------------- */
-
+/*
 .inputs {
     display: grid;
     place-items: center;
     margin-bottom: 50px;
 }
+*/
+
+
+
 
 .container-inputs {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    margin: 0 40px;
+    grid-template-areas: 
+    "header header header"
+    "footer . footer";
 }
 
 #btn {
@@ -109,5 +127,57 @@ p {
     padding: 10px;
     font-size: 15px;
     border-radius: 10px;
-    color: var(--linksColor)
+    color: var(--linksColor);
+    width: 200px;
+}
+
+#inputContain, #inputHashtags {
+    height: 70px;
+    width: 280px;
+}
+
+
+
+/* ---------------- Estilos movil ---------- */
+
+@media (max-width: 640px ) {
+    .card-tweet {
+        width: 350px;
+        padding: 20px;
+        grid-template-columns: auto 1fr;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+
+    .avatar img {
+        width: 35px;
+    }
+
+    .main-twitter p{
+        font-size: 12px;
+    }
+
+    /*--- estilos inputs ---*/
+
+    .inputs {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .container-inputs {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .container-inputs input {
+        width: 280px;
+        height: 20px;
+    }
+
+    #inputContain, #inputHashtags {
+        height: 70px;
+        width: 280px;
+    }
 }
