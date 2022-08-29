@@ -1,3 +1,4 @@
+/* -------------------------- Reset estilos globales  */
 :root {
     --backgroundColor: rgb(0, 0, 0);
     --letterColor: rgb(0, 150, 220);
@@ -34,7 +35,7 @@ p {
     color: var(--fontColor);
 }
 
-/*Estilos para card de Twitter*/
+/* ------------- Estilos para card de Twitter --------------------------------------- */
 
 .main-twitter {
     display: grid;
@@ -97,7 +98,7 @@ p {
     color: var(--linksColor);
 }
 
-/* ------------- Inputs ------------- */
+/* -------------------------- Inputs -------------------------- */
 /*
 .inputs {
     display: grid;
@@ -138,7 +139,7 @@ p {
 
 
 
-/* ---------------- Estilos movil ---------- */
+/* ---------------------------------------------------- Estilos movil --------------------------------- */
 
 @media (max-width: 640px ) {
     .card-tweet {
