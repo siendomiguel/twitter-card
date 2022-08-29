@@ -1,0 +1,35 @@
+:root {
+  --backgroundColor: rgb(0, 0, 0);
+  --letterColor: rgb(0, 150, 220);
+  --linksColor: rgb(0, 150, 220);
+  --fontColor: white;
+  --bgColorCard: #16181c;
+  --textInput: #71767b;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  color: var(--letterColor);
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background-color: var(--backgroundColor);
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--linksColor);
+}
+
+
+p {
+  color: var(--fontColor);
+}

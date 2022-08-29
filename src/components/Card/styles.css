@@ -1,0 +1,78 @@
+.main-twitter {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  place-items: center;
+}
+
+
+.card-tweet {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 650px;
+  background-color: var(--bgColorCard);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+
+.avatar img {
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contain {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.header-contain {
+  display: grid;
+  grid-template-columns: auto auto auto 1fr;
+  margin-bottom: 5px;
+  justify-items: center;
+  align-items: center;
+}
+
+.header-contain p {
+  margin: 0 5px;
+  color: var(--textInput);
+}
+
+.header-contain p:nth-child(1) {
+  font-weight: 700;
+  margin-left: 0;
+  color: var(--fontColor);
+}
+
+.header-contain img {
+  width: 20px;
+  grid-column: end;
+}
+
+.hashtags {
+  color: var(--linksColor);
+  margin-top: 20px;
+}
+
+/* ---------------------------------------------------- Estilos movil --------------------------------- */
+
+
+@media (max-width: 640px ) {
+  .card-tweet {
+      width: 350px;
+      padding: 20px;
+      grid-template-columns: auto 1fr;
+      margin-right: 5px;
+      margin-left: 10px;
+  }
+
+  .avatar img {
+      width: 35px;
+  }
+
+  .main-twitter p{
+      font-size: 12px;
+  }
+}
